@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="indexDes.css">
+	<link rel="icon" type="img/png" href="image.jpg">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body style="background-image:url('image.jpg');background-size:cover;background-repeat: no-repeat;
+  background-size: 100% 100%; background-attachment: fixed;">
+<!-- head - Googlefonts link -->
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">Transcribers</h1>
+  <p id="description"><b>Note:</b> We'd like to ask your opinions about the performance of our company. Thank you for your time.</p>
+  
+  <!-- ------------------Personal Details---------------------------- -->
+  <fieldset>
+    <!-- groups of widgets that share the same purpose, for styling and semantic purposes -->
+    <legend>Personal Details</legend>
+    <!-- formally describes the purpose of the fieldset it is included inside. -->
+    <div>
+      <label id="name-label" for="name">Name/ Company name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    <div>
+      <label for="address-label">Address:</label>
+      <input type="Address" id="address" name="Address" placeholder="Enter address here">   </div>
+    <div>
+      <label id="email-label" for="Email">Email:</label>
+      <input type="email" required id="email" name="user_email" placeholder="Enter email here">   </div>
+    <div>
+      <label id="number-label" for="phone">Phone Number:</label>
+      <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9">  </div>
+    <div>
+
+    
+    <label for="date-label">Date of Application:</label>
+    <input type="date" name="bday">
+  
+  </fieldset>
+  
+  <fieldset>
+  	<legend>Ratings</legend>
+  	 <label for="Rate">Please rate your experiences with us.</label> <br>
+<!-- ------------------Radio Buttons-------------------------------- -->
+    <div>
+      <label for="answer">Are you Satisfied with our work?</label>
+      <p>
+        <input type="radio" name="answer" value="yes" checked> Yes<br>
+        <input type="radio" name="answer" value="no"> No<br>
+<hr>
+         <label for="Rate">How do you rate your experience with our service??</label>
+      <p>
+        <input type="radio" name="Rate" value="vs" checked> Very Satisfied
+        <input type="radio" name="Rate" value="s"> Satisfied
+        <br><br>
+        <input type="radio" name="Rate" value="d" checked> Dissatisfied
+        <input type="radio" name="Rate" value="vd"> Very Dissatisfied
+    </p>
+
+         <label for="Gender">How likely are you to recomment Us to a friends?</label>
+      <p>
+        <input type="radio" name="Rate" value="wr" checked> Will likely recommend<br>
+        <input type="radio" name="Rate" value="wnr"> Will not recommend<br>
+    </p>
+         <label for="Gender">Are you satisfied with our performance?</label>
+      <p>
+        <input type="radio" name="Rate" value="vs" checked> Very Satisfied
+        <input type="radio" name="Rate" value="s"> Satisfied
+        <br><br>
+        <input type="radio" name="Rate" value="d"> Dissatisfied
+        <input type="radio" name="Rate" value="vd"> Very Dissatisfied
+    </p>
+
+    <label for="Gender">What can you say with our quality?</label>
+      <p>
+        <input type="radio" name="Rate" value="vh" checked> Very High
+        <input type="radio" name="Rate" value="h"> High
+        
+        <input type="radio" name="Rate" value="m"> Moderate
+        <br><br>
+        <input type="radio" name="Rate" value="l"> Low
+        <input type="radio" name="Rate" value="vl"> Very Low
+    </p>
+    </div>
+
+</fieldset>
+  	<!-- ------------------Checkboxes-------------------------------- -->
+   <fieldset>
+   <label for="Gender">Check All That Apply</label>
+    <p>
+      <input type="checkbox" name="tattoo" value="tattoo"> Good transcriptions<br>
+      <input type="checkbox" name="age" value="Car"> Correct tags<br>
+      <input type="checkbox" name="car" value="car"> Correct cuts<br>
+      <input type="checkbox" name="work" value="work"> Achieves the target in time<br>
+      <input type="checkbox" name="rich" value="rich"> Quality is acceptable<br>
+    </p>
+  </fieldset>
+  
+ 
+  <!-- --------------------Text Areas------------------------------ -->
+  
+  <fieldset>
+    <legend>Recommendation</legend>
+    <div>
+      <label for="msg"></label>
+      <p> Do you have any recommendionts or have something to say to our company for improvements?</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+    </div>
+</fieldset>
+
+  <div id="submitbutton">
+    <button type="submit" id="submit">Send your Response</button>   </div>
+
+</form>
+  
+</div>
+<!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation -->
+</body>
+</html>
